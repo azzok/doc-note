@@ -3,9 +3,9 @@
 
     /*============= preloader js css =============*/
     var cites = [];
-    cites[0] = "We design KbDoc for the readers, optimizing not for page views or engagement";
-    cites[1] = "KbDoc turns out that context is a key part of learning.";
-    cites[2] = "You can create any type of product documentation with KbDoc";
+    cites[0] = "We design azDoc for the readers, optimizing not for page views or engagement";
+    cites[1] = "azDoc turns out that context is a key part of learning.";
+    cites[2] = "You can create any type of product documentation with azDoc";
     cites[3] = "Advanced visual search system powered by Ajax";
     var cite = cites[Math.floor(Math.random() * cites.length)];
     $('#preloader p').text(cite);
