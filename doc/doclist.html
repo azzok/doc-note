@@ -485,11 +485,11 @@
                     <aside class="doc_left_sidebarlist">
                         <h2>KbDoc Documentation</h2>
                         <div class="scroll">
-                            <ul class="list-unstyled nav-sidebar">
+                            <ul class="list-unstyled nav-sidebar" id="side_menu_1">
                                 <li class="nav-item">
                                     <a href="doclist.html" class="nav-link"><img src="img/side-nav/home.png" alt="">Home</a>
                                 </li>
-                                <li class="nav-item active">
+                                <!-- <li class="nav-item active">
                                     <a href="shortcode.html" class="nav-link"><img src="img/side-nav/briefcase.png" alt="briefcase">Shortcodes</a>
                                     <span class="icon"><i class="arrow_carrot-down"></i></span>
                                     <ul class="list-unstyled dropdown_nav">
@@ -535,7 +535,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
-                                </li>
+                                </li> -->
                             </ul>
                             <ul class="list-unstyled nav-sidebar coding_nav">
                                 <li class="nav-item">
@@ -593,8 +593,7 @@
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Docs</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">KbDoc WordPress Theme</li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="#">Note's</a></li>
                             </ol>
                         </nav>
                     </div>
@@ -615,11 +614,11 @@
                                 <i class="arrow_carrot-left"></i>
                             </div>
                             <div class="scroll">
-                                <ul class="list-unstyled nav-sidebar">
+                                <ul class="list-unstyled nav-sidebar" id="side_menu_2">
                                     <li class="nav-item active">
                                         <a href="doclist.html" class="nav-link"><img src="img/side-nav/home.png" alt="">Home</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <a href="shortcode.html" class="nav-link"><img src="img/side-nav/briefcase.png" alt="briefcase">Shortcodes</a>
                                         <span class="icon"><i class="arrow_carrot-down"></i></span>
                                         <ul class="list-unstyled dropdown_nav">
@@ -631,8 +630,8 @@
                                             <li><a href="tooltip.html">Tooltip</a></li>
                                             <li><a href="can-use.html">Can I Use</a></li>
                                         </ul>
-                                    </li>
-                                    <li class="nav-item">
+                                    </li> -->
+                                    <!-- <li class="nav-item">
                                         <a href="layouts.html" class="nav-link"><img src="img/side-nav/coding.png" alt="">Layouts</a>
                                         <span class="icon"><i class="arrow_carrot-down"></i></span>
                                         <ul class="list-unstyled dropdown_nav">
@@ -664,7 +663,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                                 <ul class="list-unstyled nav-sidebar coding_nav">
                                     <li class="nav-item">
@@ -674,7 +673,7 @@
                                         <a href="#" class="nav-link"><img src="img/side-nav/coding.png" alt="">Development</a>
                                     </li>
                                 </ul>
-                                <ul class="list-unstyled nav-sidebar bottom_nav">
+                                <!-- <ul class="list-unstyled nav-sidebar bottom_nav">
                                     <li class="nav-item">
                                         <a href="#" class="nav-link"><img src="img/side-nav/united-states.png" alt="">Unlted States</a>
                                     </li>
@@ -684,7 +683,7 @@
                                     <li class="nav-item">
                                         <a href="#" class="nav-link"><img src="img/side-nav/users.png" alt="">Sign In <i class="arrow_right"></i></a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </aside>
                     </div>
@@ -692,11 +691,11 @@
                         <div id="post" class="documentation_info">
                             <article class="documentation_body" id="documentation">
                                 <div class="shortcode_title">
-                                    <h1>Documentation</h1>
-                                    <p><span>Welcome to KbDoc !</span> Get familiar with the Stripe products and explore their features:</p>
+                                    <h1>Note's</h1>
+                                    <p><span>Welcome to azNote !</span> Get familiar with the Stripe products and explore their features:</p>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-6 col-sm-6">
+                                <div class="row" id="sheets-container">
+                                    <!-- <div class="col-lg-6 col-sm-6">
                                         <div class="media documentation_item">
                                             <div class="icon">
                                                 <img src="img/home_one/icon/folder.png" alt="">
@@ -708,8 +707,8 @@
                                                 <p>He lost his bottle bubble and squeak knackered.!</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-6 col-sm-6">
+                                    </div> -->
+                                    <!-- <div class="col-lg-6 col-sm-6">
                                         <div class="media documentation_item">
                                             <div class="icon">
                                                 <img src="img/home_one/icon/envelope.png" alt="">
@@ -799,7 +798,7 @@
                                                 <p>He lost his bottle bubble and squeak knackered.!</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </article>
                             <div class="border_bottom"></div>
@@ -1108,6 +1107,44 @@
     <script src="assets/niceselectpicker/jquery.nice-select.min.js"></script>
     <script src="assets/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        var key="AIzaSyAIJVxIXLLa1Chbl970V_SZZAB6uMLBEwc";
+        var sheetID = "1kBfRiVz8NyG--_XckFgxsTs2afwkgyVDrt3Nb95wJ2E";
+        // var sheetID = "17BPLBBiGbhjGGTxpf0O36Zlxda0ty6W_UL0gmEiPMHo";
+    
+        var url = "https://sheets.googleapis.com/v4/spreadsheets/"+sheetID+"/?key="+key+"&includeGridData=true";  
+         $.ajax({
+            url: url, 
+            method: "GET",
+            crossDomain: true,
+            dataType: "json",
+            success: function(response){
+                var html="";var html_menu="";
+                response.sheets.map(function (item){
+                    console.log(item);
+                    html += '<div class="col-lg-6 col-sm-6"><div class="media documentation_item"><div class="icon"><img src="img/home_one/icon/folder.png" alt=""></div><div class="media-body"><a href="#"><h5>'+item.properties.title+'</h5></a><p>He lost his bottle bubble and squeak knackered.!</p></div></div></div>';
+                    html_menu += '<li class="nav-item">';
+                    item.data.map(function (item1){
+                        html_menu += '<a href="shortnote.html?note='+item.properties.title+'" class="nav-link"><img src="img/side-nav/briefcase.png" alt="briefcase">'+item.properties.title+'</a><span class="icon"><i class="arrow_carrot-down"></i></span> <ul class="list-unstyled dropdown_nav">';
+                        item1.rowData.map(function (item2){
+                            // console.log(item2.values[0].formattedValue, item2.values[1].formattedValue, item2.values[2].formattedValue)
+                            html_menu +='<li><a href="note_details.html">Tabs</a></li>';
+                        })
+                        html_menu += '</ul>';
+                    })
+                    html_menu += '</li>';
+                });
+
+                console.log(html_menu);
+                $("#side_menu_1").append(html_menu);
+                $("#side_menu_2").append(html_menu);
+                $("#sheets-container").append(html);
+            },
+            error: function(err){
+                console.log(err)
+            }
+        });
+    </script>
 </body>
 
 </html>
