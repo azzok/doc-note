@@ -8,1143 +8,1214 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-select.min.css">
     <!-- icon css-->
     <link rel="stylesheet" href="assets/elagent-icon/style.css">
-    <link rel="stylesheet" href="assets/font-awesome/css/all.css">
-    <link rel="stylesheet" href="assets/niceselectpicker/nice-select.css">
     <link rel="stylesheet" href="assets/animation/animate.css">
-    <link rel="stylesheet" href="assets/mcustomscrollbar/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <title>KbDoc</title>
+    <div data-include="site-title"></div>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example3" data-offset="86" data-scroll-animation="true" class="doc">
-    <div id="preloader">
-        <div id="ctn-preloader" class="ctn-preloader">
-            <div class="round_spinner">
-                <div class="spinner"></div>
-                <div class="text">
-                    <img src="img/spinner_logo.png" alt="">
-                    <h4><span>kb</span>Doc</h4>
-                </div>
+<body data-scroll-animation="true">
+<div id="preloader">
+    <div id="ctn-preloader" class="ctn-preloader">
+        <div class="round_spinner">
+            <div class="spinner"></div>
+            <div class="text">
+                <img src="img/spinner_logo.png" alt="">
+                <h4><span>AZ</span>Note's</h4>
             </div>
-            <h2 class="head">Did You Know?</h2>
-            <p></p>
         </div>
+        <h2 class="head">Did You Know?</h2>
+        <p></p>
     </div>
-    <div class="body_wrapper">
-        <nav class="navbar navbar-expand-lg menu_one display_none">
-            <div class="container custom_container">
-                <a class="navbar-brand sticky_logo" href="index.html">
-                    <img src="img/logo-w.png" srcset="img/logo-w2x.png 2x" alt="logo">
-                    <img src="img/logo.png" srcset="img/logo-2x.png 2x" alt="logo">
-                </a>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="menu_toggle">
-                        <span class="hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
-                        <span class="hamburger-cross">
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </span>
-                </button>
+</div>
+<div class="body_wrapper">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav menu ml-auto">
-                        <li class="nav-item dropdown submenu">
-                            <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="true" data-toggle="dropdown"></i>
-                            <ul class="dropdown-menu">
-                               <li class="nav-item"><a href="index.html" class="nav-link">Light Knowledgebase</a></li>
-                                <li class="nav-item"><a href="index-helpdesk.html" class="nav-link">Help Desk</a></li>
-                            <li class="nav-item"><a href="index-cool.html" class="nav-link">Cool Knowledgebase</a> </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown submenu mega_menu tab-demo active">
-                            <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Docs</a>
-                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="true" data-toggle="dropdown"></i>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <div class="row">
-                                        <div class="col-lg-5 tabHeader">
-                                            <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                                <li class="nav-item active">
-                                                    <a class="nav-link active" id="v-pills-doc-tab" data-toggle="pill" href="#v-pills-doc" role="tab" aria-controls="v-pills-doc" aria-selected="true">Doc Topics</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" id="v-pills-code-tab" data-toggle="pill" href="#v-pills-code" role="tab" aria-controls="v-pills-code" aria-selected="false">Shortcodes</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" id="v-pills-layout-tab" data-toggle="pill" href="#v-pills-layout" role="tab" aria-controls="v-pills-layout" aria-selected="false">Layouts</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" id="v-pills-tour-tab" data-toggle="pill" href="#v-pills-tour" role="tab" aria-controls="v-pills-tour" aria-selected="false">Tour</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" id="v-pills-content-tab" data-toggle="pill" href="#v-pills-content" role="tab" aria-controls="v-pills-content" aria-selected="false">Content</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" id="v-pills-pages-tab" data-toggle="pill" href="#v-pills-pages" role="tab" aria-controls="v-pills-pages" aria-selected="false">Other Pages</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <div class="tab-content tabContent" id="v-pills-tabContent">
-                                                <div class="tab-pane fade active show" id="v-pills-doc" role="tabpanel" aria-labelledby="v-pills-doc-tab">
-                                                    <div class="d-flex">
-                                                        <ul class="list-unstyled tab_list">
-                                                            <li>
-                                                                <a href="doc-archive.html">Doc Archive</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="doclist.html" class="active">Doc Topic</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="text">
-                                                        <a href="#">
-                                                            <p>More Categories</p>
-                                                        </a>
-                                                        <a href="doclist.html">
-                                                            <p>All docs</p>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="v-pills-code" role="tabpanel" aria-labelledby="v-pills-code-tab">
-                                                    <div class="d-flex">
-                                                        <ul class="list-unstyled tab_list">
-                                                            <li><a href="tab.html">Tabs</a></li>
-                                                            <li><a href="accordion.html">Accordion</a></li>
-                                                            <li><a href="notice.html">Notice</a></li>
-                                                            <li><a href="table.html">Tables</a></li>
-                                                            <li><a href="image-pointing.html">Image Lightbox</a></li>
-                                                        </ul>
-                                                        <ul class="list-unstyled tab_list">
-                                                            <li><a href="tooltip.html">Tooltip</a></li>
-                                                            <li><a href="lightbox.html">Lightbox</a></li>
-                                                            <li><a href="can-use.html">Can I Use</a></li>
-                                                            <li><a href="footnote.html">Footnote</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="text">
-                                                        <a href="#">
-                                                            <p>More Categories</p>
-                                                        </a>
-                                                        <a href="doclist.html">
-                                                            <p>All docs</p>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="v-pills-layout" role="tabpanel" aria-labelledby="v-pills-layout-tab">
-                                                    <div class="d-flex">
-                                                        <ul class="list-unstyled tab_list">
-                                                            <li><a href="layouts.html">Both Sidebar</a></li>
-                                                            <li><a href="layout-leftsidebar.html">Left Sidebar</a></li>
-                                                            <li><a href="layout-full.html">Full-wdith</a></li>
-                                                            <li><a href="sticky-menu.html">Sticky menu</a></li>
-                                                            <li><a href="simple-footer.html">Simple Footer</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="text">
-                                                        <a href="#">
-                                                            <p>More Categories</p>
-                                                        </a>
-                                                        <a href="#">
-                                                            <p>All docs</p>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="v-pills-tour" role="tabpanel" aria-labelledby="v-pills-tour-tab">
-                                                    <div class="d-flex">
-                                                        <ul class="list-unstyled tab_list w_100">
-                                                            <li><a href="image-pointing.html">Image Hotspot</a></li>
-                                                            <li><a href="tour.html">Application Interface</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="text">
-                                                        <a href="#">
-                                                            <p>More Categories</p>
-                                                        </a>
-                                                        <a href="#">
-                                                            <p>All docs</p>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="v-pills-content" role="tabpanel" aria-labelledby="v-pills-content-tab">
-                                                    <div class="d-flex">
-                                                        <ul class="list-unstyled tab_list">
-                                                            <li><a href="typography.html">Typography</a></li>
-                                                            <li><a href="code.html">Code</a></li>
-                                                            <li><a href="image.html">Image</a></li>
-                                                            <li><a href="video.html">Video</a></li>
-                                            <li><a href="keyboard-shortcuts.html">Keyboard Shortcuts</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="text">
-                                                        <a href="#">
-                                                            <p>More Categories</p>
-                                                        </a>
-                                                        <a href="#">
-                                                            <p>All docs</p>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="v-pills-pages" role="tabpanel" aria-labelledby="v-pills-pages-tab">
-                                                    <div class="d-flex">
-                                                        <ul class="list-unstyled tab_list">
-                                                            <li><a href="doclist.html">Doc Topics</a>
-                                                            </li>
-                                                            <li><a href="Onepage.html">Onepage</a>
-                                                            </li>
-                                                            <li><a href="cheatsheet.html">Cheatseet</a>
-                                                            </li>
-                                                            <li><a href="changelog.html">Changelog</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="text">
-                                                        <a href="#">
-                                                            <p>More Categories</p>
-                                                        </a>
-                                                        <a href="doclist.html">
-                                                            <p>All docs</p>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown submenu">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Pages
-                            </a>
-                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                                <li class="nav-item"><a href="forums.html" class="nav-link">Forum</a></li>
-                                <li class="nav-item"><a href="signin.html" class="nav-link">Sign In</a></li>
-                                <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
-                                <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
-                                <li class="nav-item"><a href="error.html" class="nav-link">404 Error</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown submenu">
-                            <a class="nav-link dropdown-toggle" href="forums.html" role="button" data-toggle="dropdown"
-                               aria-haspopup="true" aria-expanded="false">
-                                Forum
-                            </a>
-                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="forums.html" class="nav-link">Forums Root</a></li>
-                                <li class="nav-item"><a href="forum-topics.html" class="nav-link">Forum Topics</a></li>
-                                <li class="nav-item"><a href="forum-single.html" class="nav-link">Forum Single</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown submenu">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Products
-                            </a>
-                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
-                            <ul class="dropdown-menu dropdown_menu_two">
-                                <li class="nav-item">
-                                    <a href="doc-archive.html" class="nav-link">
-                                        <img src="img/tick.png" alt="">
-                                        <div class="text">
-                                            <h5>KbDoc</h5>
-                                            <p>Launch Simple Websites</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="doclist.html" class="nav-link">
-                                        <img src="img/sheet.png" alt="">
-                                        <div class="text">
-                                            <h5>docall</h5>
-                                            <p>Digital Assets Subscription</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="index.html" class="nav-link">
-                                        <img src="img/shopping-bag.png" alt="">
-                                        <div class="text">
-                                            <h5>Docenvato</h5>
-                                            <p>Tutorials & Courses</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="index.html" class="nav-link">
-                                        <img src="img/gear.png" alt="">
-                                        <div class="text">
-                                            <h5>Tools</h5>
-                                            <p>Hire a Freelancer</p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown submenu">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Blog
-                            </a>
-                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="blog-grid.html" class="nav-link">Blog Grid</a></li>
-                                <li class="nav-item"><a href="blog-grid-two.html" class="nav-link">Blog Grid Two</a></li>
-                                <li class="nav-item"><a href="blog-list.html" class="nav-link">Blog List</a></li>
-                                <li class="nav-item"><a href="blog-single.html" class="nav-link">Blog Details</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <a class="nav_btn" href="#">Free Trail</a>
-                </div>
-            </div>
-        </nav>
-        <div class="mobile_main_menu" id="sticky">
-            <div class="container">
-                <div class="mobile_menu_left">
-                    <button type="button" class="navbar-toggler mobile_menu_btn">
-                        <span class="menu_toggle ">
-                            <span class="hamburger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </span>
-                    </button>
-                    <a class="sticky_logo" href="index.html">
-                        <img src="img/logo-w.png" srcset="img/logo-w2x.png 2x" alt="logo">
-                        <img src="img/logo.png" srcset="img/logo-2x.png 2x" alt="logo">
-                    </a>
-                </div>
-                <div class="mobile_menu_right">
-                    <a class="nav_btn" href="#">Free Trail</a>
-                </div>
-            </div>
-        </div>
-        <div class="click_capture"></div>
-        <div class="side_menu">
-            <div class="mobile_menu_header">
-                <div class="close_nav">
-                    <i class="arrow_left"></i>
-                    <i class="icon_close"></i>
-                </div>
-                <div class="mobile_logo">
-                    <a href="#"><img src="img/logo.png" alt="logo"></a>
-                </div>
-            </div>
-            <div class="mobile_nav_wrapper">
-                <nav class="mobile_nav_top">
-                    <ul class="navbar-nav menu ml-auto">
-                        <li class="nav-item dropdown submenu">
-                            <a href="#" class="nav-link">Home</a>
-                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="index.html" class="nav-link">Light Knowledgebase</a></li>
-                                <li class="nav-item"><a href="index-helpdesk.html" class="nav-link">Help Desk</a></li>
-                            <li class="nav-item"><a href="index-cool.html" class="nav-link">Cool Knowledgebase</a> </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown submenu">
-                            <a href="#" class="nav-link">Docs</a>
-                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="doc-archive.html" class="nav-link">Doc Archive</a></li>
-                                <li class="nav-item"><a href="doclist.html" class="nav-link">DocTopics</a></li>
-                                <li class="nav-item dropdown submenu">
-                                    <a href="#" class="nav-link">Shortcodes</a>
-                                    <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="accordion.html" class="nav-link">Accordion</a></li>
-                                        <li class="nav-item"><a href="tab.html" class="nav-link">Tabs</a></li>
-                                        <li class="nav-item"><a href="notice.html" class="nav-link">Notices</a></li>
-                                        <li class="nav-item"><a href="table.html" class="nav-link">Tables</a></li>
-                                        <li class="nav-item"><a href="tooltip.html" class="nav-link">Tooltip</a></li>
-                                        <li class="nav-item"><a href="image-pointing.html" class="nav-link">Image Hotspots</a></li>
-                                        <li class="nav-item"><a href="lightbox.html" class="nav-link">Lightbox</a></li>
-                                        <li class="nav-item"><a href="can-use.html" class="nav-link">Can I Use</a></li>
-                                        <li class="nav-item"><a href="changelog.html" class="nav-link">Changelog</a></li>
-                                        <li class="nav-item"><a href="cheatsheet.html" class="nav-link active">Cheatsheet</a></li>
-                                        <li class="nav-item"><a href="footnote.html" class="nav-link">Footnote</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown submenu">
-                                    <a href="#" class="nav-link">Layouts</a>
-                                    <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="layouts.html" class="nav-link">Both Sidebar</a></li>
-                                        <li class="nav-item"><a href="layout-leftsidebar.html" class="nav-link">Left Sidebar</a></li>
-                                        <li class="nav-item"><a href="layout-full.html" class="nav-link">Full-wdith</a></li>
-                                        <li class="nav-item"><a href="sticky-menu.html" class="nav-link">Sticky menu</a></li>
-                                        <li class="nav-item"><a href="simple-footer.html" class="nav-link">Simple Footer</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown submenu">
-                                    <a href="#" class="nav-link">Others Pages</a>
-                                    <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="code.html" class="nav-link">Code</a></li>
-                                        <li class="nav-item"><a href="image.html" class="nav-link">Image</a></li>
-                                        <li class="nav-item"><a href="video.html" class="nav-link">Video</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown submenu">
-                            <a href="#" class="nav-link">Pages</a>
-                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="Onepage.html" class="nav-link">Onepage</a></li>
-                                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                                <li class="nav-item"><a href="signin.html" class="nav-link">Sign In</a></li>
-                                <li class="nav-item"><a href="signup.html" class="nav-link">Sign Up</a></li>
-                                <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
-                                <li class="nav-item"><a href="error.html" class="nav-link">404 Error</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown submenu">
-                            <a class="nav-link">
-                                Forum
-                            </a>
-                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="forums.html" class="nav-link">Forums Root</a></li>
-                                <li class="nav-item"><a href="forum-topics.html" class="nav-link">Forum Topics</a></li>
-                                <li class="nav-item"><a href="forum-single.html" class="nav-link">Forum Single</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown submenu">
-                            <a class="nav-link" href="#">
-                                Products
-                            </a>
-                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
-                            <ul class="dropdown-menu dropdown_menu_two">
-                                <li class="nav-item">
-                                    <a href="doc-archive.html" class="nav-link">
-                                        <img src="img/tick.png" alt="">
-                                        <div class="text">
-                                            <h5>KbDoc</h5>
-                                            <p>Launch Simple Websites</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="doclist.html" class="nav-link">
-                                        <img src="img/sheet.png" alt="">
-                                        <div class="text">
-                                            <h5>docall</h5>
-                                            <p>Digital Assets Subscription</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="index.html" class="nav-link">
-                                        <img src="img/shopping-bag.png" alt="">
-                                        <div class="text">
-                                            <h5>Docenvato</h5>
-                                            <p>Tutorials & Courses</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="index.html" class="nav-link">
-                                        <img src="img/gear.png" alt="">
-                                        <div class="text">
-                                            <h5>Tools</h5>
-                                            <p>Hire a Freelancer</p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown submenu">
-                            <a class="nav-link" href="#">
-                                Blog
-                            </a>
-                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon"></i>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="blog-grid.html" class="nav-link">Blog Grid</a></li>
-                                <li class="nav-item"><a href="blog-grid-two.html" class="nav-link">Blog Grid Two</a></li>
-                                <li class="nav-item"><a href="blog-list.html" class="nav-link">Blog List</a></li>
-                                <li class="nav-item"><a href="blog-single.html" class="nav-link">Blog Details</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="mobile_nav_bottom">
-                    <aside class="doc_left_sidebarlist">
-                        <h2>KbDoc Documentation</h2>
-                        <div class="scroll">
-                            <ul class="list-unstyled nav-sidebar" id="side_menu_1">
-                                <li class="nav-item">
-                                    <a href="doclist.html" class="nav-link"><img src="img/side-nav/home.png" alt="">Home</a>
-                                </li>
-                                <!-- <li class="nav-item active">
-                                    <a href="shortcode.html" class="nav-link"><img src="img/side-nav/briefcase.png" alt="briefcase">Shortcodes</a>
-                                    <span class="icon"><i class="arrow_carrot-down"></i></span>
-                                    <ul class="list-unstyled dropdown_nav">
-                                        <li><a href="tab.html">Tabs</a></li>
-                                        <li><a href="accordion.html">Accordion</a></li>
-                                        <li><a href="doclist.html" class="active">Doclist</a></li>
-                                        <li><a href="notice.html">Notices</a></li>
-                                        <li><a href="table.html">Table</a></li>
-                                        <li><a href="lightbox.html">Image Lightbox</a></li>
-                                        <li><a href="tooltip.html">Tooltip</a></li>
-                                        <li><a href="can-use.html">Can I use</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="layouts.html" class="nav-link"><img src="img/side-nav/coding.png" alt="">Layouts</a>
-                                    <span class="icon"><i class="arrow_carrot-down"></i></span>
-                                    <ul class="list-unstyled dropdown_nav">
-                                        <li><a href="layouts.html">Both Sidebar</a></li>
-                                        <li><a href="layout-leftsidebar.html">Left Sidebar</a></li>
-                                        <li><a href="layout-full.html">Full-width</a></li>
-                                        <li><a href="sticky-menu.html">Sticky Menu</a></li>
-                                        <li><a href="simple-footer.html">Simple Footer</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="tour.html" class="nav-link"><img src="img/side-nav/chat1.png" alt="">Tour</a>
-                                    <span class="icon"><i class="arrow_carrot-down"></i></span>
-                                    <ul class="list-unstyled dropdown_nav">
-                                        <li><a href="image-pointing.html">Image Hotspots</a></li>
-                                        <li><a href="tour.html">Application Interface</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="typography.html" class="nav-link"><img src="img/side-nav/document.png" alt="">Content</a>
-                                    <span class="icon"><i class="arrow_carrot-down"></i></span>
-                                    <ul class="list-unstyled dropdown_nav">
-                                        <li><a href="typography.html">Typography</a></li>
-                                        <li><a href="code.html">Code</a></li>
-                                        <li><a href="image.html">Image</a></li>
-                                        <li><a href="video.html">Video</a></li>
-                                            <li><a href="keyboard-shortcuts.html">Keyboard Shortcuts</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
-                                </li> -->
-                            </ul>
-                            <ul class="list-unstyled nav-sidebar coding_nav">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link"><img src="img/side-nav/account.png" alt="">Account</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link"><img src="img/side-nav/coding.png" alt="">Development</a>
-                                </li>
-                            </ul>
-                            <ul class="list-unstyled nav-sidebar bottom_nav">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link"><img src="img/side-nav/united-states.png" alt="">Unlted States</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link"><img src="img/side-nav/edit.png" alt="">English </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link"><img src="img/side-nav/users.png" alt="">Sign In <i class="arrow_right"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </aside>
-                </div>
-            </div>
-        </div>
-        <section class="breadcrumb_area">
-            <img class="p_absolute bl_left" src="img/v.svg" alt="">
-            <img class="p_absolute bl_right" src="img/home_one/b_leaf.svg" alt="">
-            <img class="p_absolute star" src="img/home_one/banner_bg.png" alt="">
-            <img class="p_absolute wave_shap_one" src="img/blog-classic/shap_01.png" alt="">
-            <img class="p_absolute wave_shap_two" src="img/blog-classic/shap_02.png" alt="">
-            <img class="p_absolute one wow fadeInRight" src="img/home_one/b_man_two.png" alt="">
-            <img class="p_absolute two wow fadeInUp" data-wow-delay="0.2s" src="img/home_one/flower.png" alt="">
-            <div class="container custom_container">
-                <form action="#" class="banner_search_form banner_search_form_two">
-                    <div class="input-group">
-                        <input type="search" class="form-control" placeholder='Search ("/" to focus)'>
-                        <div class="input-group-append">
-                            <select class="custom-select" id="inlineFormCustomSelect">
-                                <option selected>All Category</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                        <button type="submit"><i class="icon_search"></i></button>
-                    </div>
+    <div data-include="nav"></div>
+
+    <section class="doc_banner_area_two">
+        <div class="b_plus one" data-parallax='{"x": 250, "y": 160, "rotateZ":500}'><img src="img/home_two/plus.png"
+                                                                                         alt=""></div>
+        <div class="b_plus two" data-parallax='{"x": 250, "y": 260, "rotateZ":500}'><img src="img/home_two/plus_one.png"
+                                                                                         alt=""></div>
+        <div class="b_round r_one" data-parallax='{"x": 0, "y": 100, "rotateZ":0}'></div>
+        <div class="b_round r_two" data-parallax='{"x": -10, "y": 80, "rotateY":0}'></div>
+        <div class="b_round r_three"></div>
+        <div class="b_round r_four"></div>
+        <img class="p_absolute building_img" src="img/home_two/building.png" alt="">
+        <img class="p_absolute table_img wow fadeInLeft" src="img/home_two/table.svg" alt="">
+        <img class="p_absolute flower wow fadeInUp" data-wow-delay="0.6s" src="img/home_two/flower.png" alt="">
+        <img class="p_absolute bord wow fadeInRight" data-wow-delay="0.4s" src="img/home_two/bord.png" alt="">
+        <img class="p_absolute girl wow fadeInRight" data-wow-delay="0.8s" src="img/home_two/girl.png" alt="">
+        <div class="container">
+            <div class="doc_banner_text_two text-center">
+                <h2>Looking for help?</h2>
+                <form action="#" class="banner_search_form">
+                    <input type="search" class="form-control" placeholder="Search the Knowledge Base">
+                    <button type="submit" class="search_btn">Search</button>
                 </form>
             </div>
-        </section>
-        <section class="page_breadcrumb">
-            <div class="container custom_container">
-                <div class="row">
-                    <div class="col-sm-7">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page"><a href="#">Note's</a></li>
-                            </ol>
-                        </nav>
-                    </div>
-                    <div class="col-sm-5">
-                        <a href="#" class="date"><i class="icon_clock_alt"></i>Updated on March 03, 2020</a>
-                    </div>
-                </div>
+        </div>
+    </section>
+    <section class="theme_doc_area bg_color sec_pad">
+        <div class="container">
+            <div class="section_title text-center">
+                <h2 class="h_title wow fadeInUp"> Note's</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.2s">Some dodgy chav bevvy amongst argy-bargy spiffing
+                    absolutely bladdered nancy boy cup of tea a load of old tosh porkies.</p>
             </div>
-        </section>
-        <section class="doc_documentation_area" id="sticky_doc">
-            <div class="overlay_bg"></div>
-            <div class="container custom_container">
-                <div class="row">
-                    <div class="col-lg-3 doc_mobile_menu display_none">
-                        <aside class="doc_left_sidebarlist">
-                            <div class="open_icon" id="left">
-                                <i class="arrow_carrot-right"></i>
-                                <i class="arrow_carrot-left"></i>
-                            </div>
-                            <div class="scroll">
-                                <ul class="list-unstyled nav-sidebar" id="side_menu_2">
-                                    <li class="nav-item active">
-                                        <a href="doclist.html" class="nav-link"><img src="img/side-nav/home.png" alt="">Home</a>
-                                    </li>
-                                    <!-- <li class="nav-item">
-                                        <a href="shortcode.html" class="nav-link"><img src="img/side-nav/briefcase.png" alt="briefcase">Shortcodes</a>
-                                        <span class="icon"><i class="arrow_carrot-down"></i></span>
-                                        <ul class="list-unstyled dropdown_nav">
-                                            <li><a href="tab.html">Tabs</a></li>
-                                            <li><a href="accordion.html">Accordion</a></li>
-                                            <li><a href="notice.html">Notices</a></li>
-                                            <li><a href="table.html">Table</a></li>
-                                            <li><a href="lightbox.html">Image Lightbox</a></li>
-                                            <li><a href="tooltip.html">Tooltip</a></li>
-                                            <li><a href="can-use.html">Can I Use</a></li>
-                                        </ul>
-                                    </li> -->
-                                    <!-- <li class="nav-item">
-                                        <a href="layouts.html" class="nav-link"><img src="img/side-nav/coding.png" alt="">Layouts</a>
-                                        <span class="icon"><i class="arrow_carrot-down"></i></span>
-                                        <ul class="list-unstyled dropdown_nav">
-                                            <li><a href="layouts.html">Both Sidebar</a></li>
-                                            <li><a href="layout-leftsidebar.html">Left Sidebar</a></li>
-                                            <li><a href="layout-full.html">Full-width</a></li>
-                                            <li><a href="sticky-menu.html">Sticky Menu</a></li>
-                                            <li><a href="simple-footer.html">Simple Footer</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="tour.html" class="nav-link"><img src="img/side-nav/chat1.png" alt="">Tour</a>
-                                        <span class="icon"><i class="arrow_carrot-down"></i></span>
-                                        <ul class="list-unstyled dropdown_nav">
-                                            <li><a href="image-pointing.html">Image Hotspots</a></li>
-                                            <li><a href="tour.html">Application Interface</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="typography.html" class="nav-link"><img src="img/side-nav/document.png" alt="">Content</a>
-                                        <span class="icon"><i class="arrow_carrot-down"></i></span>
-                                        <ul class="list-unstyled dropdown_nav">
-                                            <li><a href="typography.html">Typography</a></li>
-                                            <li><a href="code.html">Code</a></li>
-                                            <li><a href="image.html">Image</a></li>
-                                            <li><a href="video.html">Video</a></li>
-                                            <li><a href="keyboard-shortcuts.html">Keyboard Shortcuts</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="changelog.html" class="nav-link"><img src="img/side-nav/document2.png" alt="">Change Log</a>
-                                    </li> -->
-                                </ul>
-                                <ul class="list-unstyled nav-sidebar coding_nav">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><img src="img/side-nav/account.png" alt="">Account</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><img src="img/side-nav/coding.png" alt="">Development</a>
-                                    </li>
-                                </ul>
-                                <!-- <ul class="list-unstyled nav-sidebar bottom_nav">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><img src="img/side-nav/united-states.png" alt="">Unlted States</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><img src="img/side-nav/edit.png" alt="">English </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><img src="img/side-nav/users.png" alt="">Sign In <i class="arrow_right"></i></a>
-                                    </li>
-                                </ul> -->
-                            </div>
-                        </aside>
-                    </div>
-                    <div class="col-lg-7 col-md-8">
-                        <div id="post" class="documentation_info">
-                            <article class="documentation_body" id="documentation">
-                                <div class="shortcode_title">
-                                    <h1>Note's</h1>
-                                    <p><span>Welcome to azNote !</span> Get familiar with the Stripe products and explore their features:</p>
-                                </div>
-                                <div class="row" id="sheets-container">
-                                    <!-- <div class="col-lg-6 col-sm-6">
-                                        <div class="media documentation_item">
-                                            <div class="icon">
-                                                <img src="img/home_one/icon/folder.png" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <a href="#">
-                                                    <h5>Working with Docs</h5>
-                                                </a>
-                                                <p>He lost his bottle bubble and squeak knackered.!</p>
-                                            </div>
-                                        </div>
-                                    </div> -->
-                                    <!-- <div class="col-lg-6 col-sm-6">
-                                        <div class="media documentation_item">
-                                            <div class="icon">
-                                                <img src="img/home_one/icon/envelope.png" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <a href="#">
-                                                    <h5>Formatting Content</h5>
-                                                </a>
-                                                <p>He lost his bottle bubble and squeak knackered.!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-sm-6">
-                                        <div class="media documentation_item">
-                                            <div class="icon">
-                                                <img src="img/home_one/icon/smartphone.png" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <a href="#">
-                                                    <h5>Mobile App</h5>
-                                                </a>
-                                                <p>He lost his bottle bubble and squeak knackered.!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-sm-6">
-                                        <div class="media documentation_item">
-                                            <div class="icon">
-                                                <img src="img/home_one/icon/management.png" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <a href="#">
-                                                    <h5>Account Management</h5>
-                                                </a>
-                                                <p>He lost his bottle bubble and squeak knackered.!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-sm-6">
-                                        <div class="media documentation_item">
-                                            <div class="icon">
-                                                <img src="img/home_one/icon/newspaper.png" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <a href="#">
-                                                    <h5>Productivity</h5>
-                                                </a>
-                                                <p>He lost his bottle bubble and squeak knackered.!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-sm-6">
-                                        <div class="media documentation_item">
-                                            <div class="icon">
-                                                <img src="img/side-nav/issuin.png" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <a href="#">
-                                                    <h5>Issuing</h5>
-                                                </a>
-                                                <p>He lost his bottle bubble and squeak knackered.!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-sm-6">
-                                        <div class="media documentation_item">
-                                            <div class="icon">
-                                                <img src="img/side-nav/terminals.png" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <a href="#">
-                                                    <h5>Terminal</h5>
-                                                </a>
-                                                <p>He lost his bottle bubble and squeak knackered.!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-sm-6">
-                                        <div class="media documentation_item">
-                                            <div class="icon">
-                                                <img src="img/home_one/icon/android.png" alt="">
-                                            </div>
-                                            <div class="media-body">
-                                                <a href="#">
-                                                    <h5>Getting Started</h5>
-                                                </a>
-                                                <p>He lost his bottle bubble and squeak knackered.!</p>
-                                            </div>
-                                        </div>
-                                    </div> -->
-                                </div>
-                            </article>
-                            <div class="border_bottom"></div>
-                            <article class="get_started" id="getting">
-                                <h4 class="c_head">Getting started</h4>
-                                <p>Owt to do with me chinwag get stuffed mate baking cakes blow off vagabond knackered faff about boot a load of old tosh <a href="#">Richard Charles</a>, cor blimey guvnor cheers fantastic butty.</p>
-                                <h4 class="c_head">Accept payments</h4>
-                                <p>James Bond knackered cup of char show off show off pick your nose and blow off faff about it's all gone to pot tosser that so I said, <a href="#">young delinquent</a> happy days do one bite your arm off ummm I'm telling gutted mate amongst a blinding shot, nice one blatant only a quid smashing A bit of how's your father plastered me old mucker. </p>
-                                <p>My lady bloke A bit of how's your father boot so I said <a href="#">William twit pear shaped</a> bobby sloshed bum bag brolly, <a href="#">have it blag he lost his</a> bottle brilliant gutted.</p>
-                                <p><a href="#">Plastered cack bog-standard hanky panky owt</a> to do with me young delinquent chancer</p>
-                                <h4 class="c_head">Build a marketplace</h4>
-                                <p>Owt to do with me chinwag get stuffed mate baking cakes blow off vagabond knackered faff about boot a load of old tosh <a href="#">Richard Charles</a>, cor blimey guvnor cheers fantastic butty <a href="#">A bit of how's your father down</a> the pub plastered bugger <a href="#">all mate such a fibber</a> lemon squeezy.</p>
-                                <a href="#">
-                                    <h4 class="c_head load-order-2">Add payments to your platform</h4>
-                                </a>
-                                <p>Don't get shirty with me what a plonker on your bike mate bugger all mate chip shop bits and bobs smashing mush bugger cup of char, in my flat my lady naff bubble and squeak tosser pukka barmy bog the bee's knees, elizabeth dropped a clanger cheesed.</p>
-                                <h4 class="c_head">Extend Stripe's offerings</h4>
-                                <p>Naff wellies such a fibber up the duff some dodgy chav sloshed blow off golly gosh <a href="#">jolly good hotpot gutted mate</a>, me old mucker cras mush.</p>
-                                <div class="link">
-                                    <p>Spiffing good time blimey smashing bevvy hunky-dory cor blimey guvnor elizabeth bite your arm off, bamboozled A bit of how's your father it's all gone to pot bodge.</p>
-                                </div>
-                            </article>
-                            <div class="border_bottom"></div>
-                            <article class="test_version" id="version">
-                                <h4 class="c_head">Test KbDoc Version</h4>
-                                <p>Try the KbDoc API in seconds. Create your first customer, charge, and more by following the steps below.</p>
-                                <ul class="nav nav-tabs v_menu" id="myTab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" id="card-tab" data-toggle="tab" href="#card" role="tab" aria-controls="card" aria-selected="true"><span>1</span>Card</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="customer-tab" data-toggle="tab" href="#customer" role="tab" aria-controls="customer" aria-selected="false"><span>2</span>Customer</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="charge-tab" data-toggle="tab" href="#charge" role="tab" aria-controls="charge" aria-selected="false"><span>3</span>Charge</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="sub-tab" data-toggle="tab" href="#sub" role="tab" aria-controls="sub" aria-selected="false"><span>4</span>Subscription</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="success-tab" data-toggle="tab" href="#success" role="tab" aria-controls="success" aria-selected="false"><span>5</span>Success!</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="card" role="tabpanel" aria-labelledby="card-tab">
-                                        <p>Twit brilliant he legged it he nicked it amongst hotpot chinwag spend a penny lemon squeezy he lost his bottle porkies, Why it's your round happy days.</p>
-                                        <div class="version">
-                                            <div class="v_head">
-                                                KbDoc run hello-world
-                                            </div>
-                                            <div class="v_middle">
-                                                <p>Unable to find image <span class="red">'hello-world:latest'</span> locally</p>
-                                                <p>latest: Pulling from library/hello-world</p>
-                                                <p>ca4f61b1923c: Pull <span class="green">complete</span></p>
-                                                <p>Digest: sha256:ca0eeb6fb05351dfc8759c20733c91def84cb8007aa89a5bf606bc8b315b9fc7</p>
-                                                <p>Status: Downloaded newer image for hello-world:latest</p>
-                                            </div>
-                                            <div class="v_footer">
-                                                <p>Hello from KbDoc!<br> This message shows that your installation appears to be working correctly. <br>...</p>
-                                            </div>
-                                        </div>
-                                        <p><span>Usage:</span> Click "Submit" to create a token.</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="customer" role="tabpanel" aria-labelledby="customer-tab">
-                                        <p>Twit brilliant he legged it he nicked it amongst hotpot chinwag spend a penny lemon squeezy he lost his bottle porkies, Why it's your round happy days.</p>
-                                        <div class="version">
-                                            <div class="v_head">
-                                                KbDoc run hello-world
-                                            </div>
-                                            <div class="v_middle">
-                                                <p>Unable to find image <span class="red">'hello-world:latest'</span> locally</p>
-                                                <p>latest: Pulling from library/hello-world</p>
-                                                <p>ca4f61b1923c: Pull <span class="green">complete</span></p>
-                                                <p>Digest: sha256:ca0eeb6fb05351dfc8759c20733c91def84cb8007aa89a5bf606bc8b315b9fc7</p>
-                                                <p>Status: Downloaded newer image for hello-world:latest</p>
-                                            </div>
-                                            <div class="v_footer">
-                                                <p>Hello from KbDoc!<br> This message shows that your installation appears to be working correctly. <br>...</p>
-                                            </div>
-                                        </div>
-                                        <p><span>Usage:</span> Click "Submit" to create a token.</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="charge" role="tabpanel" aria-labelledby="charge-tab">
-                                        <p>Twit brilliant he legged it he nicked it amongst hotpot chinwag spend a penny lemon squeezy he lost his bottle porkies, Why it's your round happy days.</p>
-                                        <div class="version">
-                                            <div class="v_head">
-                                                KbDoc run hello-world
-                                            </div>
-                                            <div class="v_middle">
-                                                <p>Unable to find image <span class="red">'hello-world:latest'</span> locally</p>
-                                                <p>latest: Pulling from library/hello-world</p>
-                                                <p>ca4f61b1923c: Pull <span class="green">complete</span></p>
-                                                <p>Digest: sha256:ca0eeb6fb05351dfc8759c20733c91def84cb8007aa89a5bf606bc8b315b9fc7</p>
-                                                <p>Status: Downloaded newer image for hello-world:latest</p>
-                                            </div>
-                                            <div class="v_footer">
-                                                <p>Hello from KbDoc!<br> This message shows that your installation appears to be working correctly. <br>...</p>
-                                            </div>
-                                        </div>
-                                        <p><span>Usage:</span> Click "Submit" to create a token.</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="sub" role="tabpanel" aria-labelledby="sub-tab">
-                                        <p>Twit brilliant he legged it he nicked it amongst hotpot chinwag spend a penny lemon squeezy he lost his bottle porkies, Why it's your round happy days.</p>
-                                        <div class="version">
-                                            <div class="v_head">
-                                                KbDoc run hello-world
-                                            </div>
-                                            <div class="v_middle">
-                                                <p>Unable to find image <span class="red">'hello-world:latest'</span> locally</p>
-                                                <p>latest: Pulling from library/hello-world</p>
-                                                <p>ca4f61b1923c: Pull <span class="green">complete</span></p>
-                                                <p>Digest: sha256:ca0eeb6fb05351dfc8759c20733c91def84cb8007aa89a5bf606bc8b315b9fc7</p>
-                                                <p>Status: Downloaded newer image for hello-world:latest</p>
-                                            </div>
-                                            <div class="v_footer">
-                                                <p>Hello from KbDoc!<br> This message shows that your installation appears to be working correctly. <br>...</p>
-                                            </div>
-                                        </div>
-                                        <p><span>Usage:</span> Click "Submit" to create a token.</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="success" role="tabpanel" aria-labelledby="success-tab">
-                                        <p>Twit brilliant he legged it he nicked it amongst hotpot chinwag spend a penny lemon squeezy he lost his bottle porkies, Why it's your round happy days.</p>
-                                        <div class="version">
-                                            <div class="v_head">
-                                                KbDoc run hello-world
-                                            </div>
-                                            <div class="v_middle">
-                                                <p>Unable to find image <span class="red">'hello-world:latest'</span> locally</p>
-                                                <p>latest: Pulling from library/hello-world</p>
-                                                <p>ca4f61b1923c: Pull <span class="green">complete</span></p>
-                                                <p>Digest: sha256:ca0eeb6fb05351dfc8759c20733c91def84cb8007aa89a5bf606bc8b315b9fc7</p>
-                                                <p>Status: Downloaded newer image for hello-world:latest</p>
-                                            </div>
-                                            <div class="v_footer">
-                                                <p>Hello from KbDoc!<br> This message shows that your installation appears to be working correctly. <br>...</p>
-                                            </div>
-                                        </div>
-                                        <p><span>Usage:</span> Click "Submit" to create a token.</p>
-                                    </div>
-                                </div>
-                            </article>
-                            <div class="border_bottom"></div>
-                            <article class="developer" id="developer">
-                                <h4 class="c_head">Not a developer?</h4>
-                                <p>Some dodgy chav bonnet victoria sponge <a href="#">jolly good bits and bobs</a> James Bond wind up the BBC he lost his bottle a cheesed off such a fibber, say cras have it I spiffing good time up the kyver hotpot cup of char tomfoolery chap lost the plot, crikey brilliant what a plonker morish <a href="#">baking cakes that burke bugger up</a> the duff cor blimey guvnor.</p>
-                            </article>
-                            <div class="border_bottom"></div>
-                            <article class="help_text" id="help">
-                                <h4 class="c_head">We're here to help!</h4>
-                                <div class="help_info">
-                                    <div class="help_item">
-                                        <a href="#">
-                                            <h4>Support</h4>
-                                        </a>
-                                        <p>Car boot absolutely bladder the full monty ruddy.</p>
-                                    </div>
-                                    <div class="help_item">
-                                        <a href="#">
-                                            <h4>Samples <i class="arrow_carrot-right"></i></h4>
-                                        </a>
-                                        <p>Car boot absolutely bladder the full monty ruddy.</p>
-                                    </div>
-                                    <div class="help_item">
-                                        <a href="#">
-                                            <h4>API Discussion Board</h4>
-                                        </a>
-                                        <p>Car boot absolutely bladder the full monty ruddy.</p>
-                                    </div>
-                                </div>
-                                <div class="border_bottom"></div>
-                                <div class="row question_box">
-                                    <div class="col-lg-6">
-                                        <div class="question_text">
-                                            <h4>Questions?</h4>
-                                            <p>Cheeky that bubble and squeak fanny around bleeder hunky-dory daft <a href="#">bonnet brolly victoria</a> sponge show off show off pick your nose and blow off <a href="#">my good sir, cobblers</a> dropped.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="question_text question_text_two">
-                                            <h4>Sign up for the Developer Digest</h4>
-                                            <p>Share your email so KbDoc can send you updates about the API and developer platform.</p>
-                                            <form class="mailchimp signup_form" method="post">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control memail" placeholder="Email">
-                                                    <div class="input-group-append">
-                                                        <button type="submit">Sign Up</button>
-                                                    </div>
-                                                </div>
-                                                <p class="mchimp-errmessage" style="display: none;"></p>
-                                                <p class="mchimp-sucmessage" style="display: none;"></p>
-                                            </form>
-                                            <p>You can unsubscribe at any time. Read our privacy policy <a href="#">here</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <footer>
-                                    <div class="border_bottom"></div>
-                                    <div class="row feedback_link">
-                                        <div class="col-lg-6">
-                                            <h6><i class="icon_mail_alt"></i>Still stuck? <a href="#" data-toggle="modal" data-target="#exampleModal3">How can we help?</a></h6>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <p>Was this page helpful? <a href="#" class="h_btn">Yes</a><a href="#" class="h_btn">No</a></p>
-                                        </div>
-                                    </div>
-                                </footer>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 doc_right_mobile_menu">
-                        <div class="open_icon" id="right">
-                            <i class="arrow_carrot-left"></i>
-                            <i class="arrow_carrot-right"></i>
-                        </div>
-                        <div class="doc_rightsidebar scroll">
-                            <select id="mySelect" name="os">
-                                <option value="windows" data-content="<i class='fab fa-windows'></i> Windows">Windows</option>
-                                <option value="ios" data-content="<i class='fab fa-apple'></i> Ios">Ios</option>
-                                <option value="linux" data-content="<i class='fab fa-linux'></i> Linux">Linux</option>
-                            </select>
-                            <div id="font-switcher" class="d-flex justify-content-between align-items-center">
-                                <div id="rvfs-controllers" class="fontsize-controllers group"></div>
-                                <a href="javascript:window.print()" class="print"><i class="icon_printer"></i></a>
-                            </div>
-                            <div class="doc_switch">
-                                <label for="something" class="tab-btn tab-btns"><i class="icon_lightbulb_alt"></i></label>
-                                <input type="checkbox" name="something" id="something" class="tab_switcher">
-                                <label for="something" class="tab-btn"><i class="far fa-moon"></i></label>
-                            </div>
-                            <h6>On this page:</h6>
-                            <nav class="list-unstyled doc_menu" id="navbar-example3">
-                                <a href="#documentation" class="nav-link active">Documentation</a>
-                                <a href="#getting" class="nav-link">Getting started</a>
-                                <a href="#version" class="nav-link">Test KbDoc Version</a>
-                                <a href="#developer" class="nav-link">Not a developer?</a>
-                                <a href="#help" class="nav-link">We're here to help!</a>
-                            </nav>
+            <div class="row" id="sheets-container">
+                <!-- <div class="col-lg-4 col-sm-6">
+                    <div class="media theme_doc_item wow fadeInUp">
+                        <img src="img/home_two/cloud1.png" alt="">
+                        <div class="media-body">
+                            <a href="#">
+                                <h4 class="c_head">Grow Your Business</h4>
+                            </a>
+                            <p>Oxford bonnet are you taking the piss cheeky mufty.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <footer class="simple_footer">
-            <img class="leaf_right" src="img/home_one/leaf_footter.png" alt="">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-sm-6">
-                        <p>© 2020 All Rights Reserved by <a href="index.html">KbDoc</a></p>
+                 <div class="col-lg-4 col-sm-6">
+                    <div class="media theme_doc_item wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="img/home_two/Lock_is_open.png" alt="">
+                        <div class="media-body">
+                            <a href="#">
+                                <h4 class="c_head">Knowledge Base</h4>
+                            </a>
+                            <p>Oxford bonnet are you taking the piss cheeky mufty.</p>
+                        </div>
                     </div>
-                    <div class="col-sm-6 text-right">
-                        <ul class="list-unstyled f_social_icon">
-                            <li><a href="#"><i class="social_facebook"></i></a></li>
-                            <li><a href="#"><i class="social_twitter"></i></a></li>
-                            <li><a href="#"><i class="social_vimeo"></i></a></li>
-                            <li><a href="#"><i class="social_linkedin"></i></a></li>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="media theme_doc_item wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="img/home_two/Support.png" alt="">
+                        <div class="media-body">
+                            <a href="#">
+                                <h4 class="c_head">Online Support</h4>
+                            </a>
+                            <p>Oxford bonnet are you taking the piss cheeky mufty.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="media theme_doc_item wow fadeInUp">
+                        <img src="img/home_two/usser.png" alt="">
+                        <div class="media-body">
+                            <a href="#">
+                                <h4 class="c_head">Account Management</h4>
+                            </a>
+                            <p>Oxford bonnet are you taking the piss cheeky mufty.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="media theme_doc_item wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="img/home_two/pencil.png" alt="">
+                        <div class="media-body">
+                            <a href="#">
+                                <h4 class="c_head">Formatting Content</h4>
+                            </a>
+                            <p>Oxford bonnet are you taking the piss cheeky mufty.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="media theme_doc_item wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="img/home_two/Channel.png" alt="">
+                        <div class="media-body">
+                            <a href="#">
+                                <h4 class="c_head">Great Products</h4>
+                            </a>
+                            <p>Oxford bonnet are you taking the piss cheeky mufty.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="media theme_doc_item wow fadeInUp">
+                        <img src="img/home_two/Duplicate.png" alt="">
+                        <div class="media-body">
+                            <a href="#">
+                                <h4 class="c_head">Documentation</h4>
+                            </a>
+                            <p>Oxford bonnet are you taking the piss cheeky mufty.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="media theme_doc_item wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="img/home_two/Bell.png" alt="">
+                        <div class="media-body">
+                            <a href="#">
+                                <h4 class="c_head">Dedicated Widgets</h4>
+                            </a>
+                            <p>Oxford bonnet are you taking the piss cheeky mufty.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="media theme_doc_item wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="img/home_two/Tune-up.png" alt="">
+                        <div class="media-body">
+                            <a href="#">
+                                <h4 class="c_head">Working with Docs</h4>
+                            </a>
+                            <p>Oxford bonnet are you taking the piss cheeky mufty.</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="text-center">
+                <a href="doclist.html" class="doc_border_btn all_doc_btn wow fadeinUp">View All Docs<i class="arrow_right"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="doc_categories_guide_area sec_pad">
+        <img class="shap wow fadeInUp" src="img/home_one/dow_bg_two.png" alt="">
+        <div class="container">
+            <div class="section_title text-center">
+                <h2 class="h_title wow fadeInUp">Check out our guide categories</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.2s">Some dodgy chav bevvy amongst argy-bargy spiffing
+                    absolutely bladdered nancy boy cup of tea a load of old tosh porkies.</p>
+            </div>
+            <div class="row" id="note_detail_container">
+                <!-- <div class="col-lg-4 col-sm-6">
+                    <div class="categories_guide_item wow fadeInUp">
+                        <img src="img/home_two/folder.png" alt="">
+                        <div class="doc_tag_title">
+                            <h4>Getting Started</h4>
+                        </div>
+                        <ul class="list-unstyled tag_list">
+                            <li><a href="#"><i class="icon_document_alt"></i>Setup home page layout</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>BBpress sidebar layout styles</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>Knowledgebase page setup</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>Creating home page blocks</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>How do i add FAQ post</a></li>
+                        </ul>
+                        <a href="#" class="doc_border_btn">More<i class="arrow_right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="categories_guide_item wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="img/home_two/info.png" alt="">
+                        <div class="doc_tag_title">
+                            <h4>Integrations</h4>
+                        </div>
+                        <ul class="list-unstyled tag_list">
+                            <li><a href="#"><i class="icon_document_alt"></i>How To Install Manual Theme</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>Theme license information</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>How do i create tree structure menu</a>
+                            </li>
+                            <li><a href="#"><i class="icon_document_alt"></i>How do I login forum section</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>How do I login forum section</a></li>
+                        </ul>
+                        <a href="#" class="doc_border_btn">More<i class="arrow_right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="categories_guide_item wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="img/home_two/weather.png" alt="">
+                        <div class="doc_tag_title">
+                            <h4>Cloud Server</h4>
+                        </div>
+                        <ul class="list-unstyled tag_list">
+                            <li><a href="#"><i class="icon_document_alt"></i>Mailbox and User Settings</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>Preparing your server for installation</a>
+                            </li>
+                            <li><a href="#"><i class="icon_document_alt"></i>Managing Docs in azDoc</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>How do i add FAQ post</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>Creating home page blocks</a></li>
+                        </ul>
+                        <a href="#" class="doc_border_btn">More<i class="arrow_right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="categories_guide_item wow fadeInUp">
+                        <img src="img/home_two/settings.png" alt="">
+                        <div class="doc_tag_title">
+                            <h4>User Settings</h4>
+                        </div>
+                        <ul class="list-unstyled tag_list">
+                            <li><a href="#"><i class="icon_document_alt"></i>Do I need to know coding</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>Managing Docs in azDoc</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>Working with Conversations</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>Copying Email to azDoc</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>Knowledgebase page setup</a></li>
+                        </ul>
+                        <a href="#" class="doc_border_btn">More<i class="arrow_right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="categories_guide_item wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="img/home_two/memo.png" alt="">
+                        <div class="doc_tag_title">
+                            <h4>Reporting</h4>
+                        </div>
+                        <ul class="list-unstyled tag_list">
+                            <li><a href="#"><i class="icon_document_alt"></i>Setup home page layout</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>BBpress sidebar layout styles</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>Knowledgebase page setup</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>Creating home page blocks</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>How do i add FAQ post</a></li>
+                        </ul>
+                        <a href="#" class="doc_border_btn">More<i class="arrow_right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="categories_guide_item wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="img/home_two/share.png" alt="">
+                        <div class="doc_tag_title">
+                            <h4>Solar System</h4>
+                        </div>
+                        <ul class="list-unstyled tag_list">
+                            <li><a href="#"><i class="icon_document_alt"></i>How do I contact Customer Care?</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>How to enable labs features</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>Knowledgebase page setup</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>How do I login forum section</a></li>
+                            <li><a href="#"><i class="icon_document_alt"></i>Mailbox and User Settings</a></li>
+                        </ul>
+                        <a href="#" class="doc_border_btn">More<i class="arrow_right"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="text-center">
+                <a href="#" class="doc_border_btn all_doc_btn wow fadeinUp">View All Docs<i class="arrow_right"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="doc_solution_area sec_pad">
+        <div class="container">
+            <div class="section_title text-center">
+                <h2 class="h_title wow fadeInUp">Didn't find any Solution?</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.2s">Loaded with awesome features like Documentation,
+                    Knowledgebase, Forum & more!</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="doc_solution_item online_doc wow fadeInUp">
+                        <img src="img/home_two/Briefcase.png" alt="">
+                        <h4>Online Documentation</h4>
+                        <p>Horse play barmy Oxford bonnet are you taking the piss cheeky mufty nice one young
+                            delinquent.</p>
+                        <a href="#" class="learn_btn c_blue">Go To Documentation<i class="arrow_right"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="doc_solution_item premium_doc wow fadeInUp" data-wow-delay="0.3s">
+                        <img src="img/home_two/setting-icon.png" alt="">
+                        <h4>Premium Support</h4>
+                        <p>Horse play barmy Oxford bonnet are you taking the piss cheeky mufty nice one young
+                            delinquent.</p>
+                        <a href="#" class="learn_btn c_blue">Go To Documentation<i class="arrow_right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="doc_border_btn all_doc_btn wow fadeInUp" data-wow-delay="0.6s">Live Chat Now<i
+                        class="icon_chat_alt"></i></a>
+            </div>
+        </div>
+    </section> -->
+    <section class="doc_fun_fact_area">
+        <div class="animated-waves">
+            <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="animated-wave">
+                <title>Wave</title>
+                <defs></defs>
+                <path id="animated-wave-three" d=""/>
+            </svg>
+            <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="animated-wave">
+                <title>Wave</title>
+                <defs></defs>
+                <path id="animated-wave-four" d=""/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 wow fadeInUp">
+                    <div class="doc_fact_item">
+                        <div class="counter">5486</div>
+                        <p>Happy Customer</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="doc_fact_item">
+                        <div class="counter">642</div>
+                        <p>Cups of Coffee</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="doc_fact_item">
+                        <div class="counter">100</div>
+                        <p>Finished Projects</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="doc_fact_item">
+                        <div class="counter">476</div>
+                        <p>Staff Members</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="doc_faq_area_two sec_pad">
+        <div class="container">
+            <div class="section_title text-center">
+                <h2 class="h_title wow fadeInUp">Frequently Asked Questions</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.2s">Some dodgy chav bevvy amongst argy-bargy spiffing
+                    absolutely bladdered nancy boy cup of tea a load of old tosh porkies.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-5">
+                    <div class="fact_navigation_info">
+                        <h4 class="c_head">Quick Navigation</h4>
+                        <ul class="nav nav-tabs fact_navigation" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="online-tab" data-toggle="tab" href="#online" role="tab"
+                                   aria-controls="online" aria-selected="true"><i class="icon_folder-alt"></i>Purchasing
+                                    Online</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="formOne-tab" data-toggle="tab" href="#formOne" role="tab"
+                                   aria-controls="formOne" aria-selected="false"><i class="icon_cloud-upload_alt"></i>Post
+                                    Forms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pricingOne-tab" data-toggle="tab" href="#pricingOne" role="tab"
+                                   aria-controls="pricingOne" aria-selected="false"><i class="icon_key_alt"></i>Pricing
+                                    & Support</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profileOne-tab" data-toggle="tab" href="#profileOne" role="tab"
+                                   aria-controls="profileOne" aria-selected="false"><i class="icon_lightbulb_alt"></i>Registration
+                                    & Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="return-tab" data-toggle="tab" href="#return" role="tab"
+                                   aria-controls="return" aria-selected="false"><i class="icon_bag_alt"></i>Returns</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="car-tab" data-toggle="tab" href="#car" role="tab"
+                                   aria-controls="car" aria-selected="false"><i class="icon_menu-square_alt2"></i>Care &
+                                    Repair</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </div>
-    <div class="modal fade img_modal" id="exampleModal2" tabindex="-2" role="dialog" aria-hidden="false">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <i class=" icon_close"></i>
-        </button>
-        <div class="modal-dialog help_form" role="document">
-            <div class="modal-content">
-                <div class="shortcode_title">
-                    <h1>How can we help?</h1>
-                    <p>A premium WordPress theme with integrated Knowledge Base,<br>providing 24/7 community based support.</p>
+                <div class="col-lg-8 col-md-7">
+                    <div class="tab-content pl_70" id="myTabContent">
+                        <div class="tab-pane faq_tab_pane fade show active" id="online" role="tabpanel"
+                             aria-labelledby="online-tab">
+                            <div class="accordion doc_faq_info" id="accordionExample">
+                                <div class="card wow fadeInUp">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                    data-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                How can I deploy Documentation Landing?<i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                         data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                Is maternity covered in health insurance policies?<i
+                                                    class="icon_plus"></i><i class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                         data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="card-header" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree">
+                                                What are the documents required for claiming? <i
+                                                    class="icon_plus"></i><i class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                         data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="card-header" id="headingFour">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapseFour" aria-expanded="false"
+                                                    aria-controls="collapseFour">
+                                                Any useful books on numerical computing?<i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                         data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="card-header" id="headingfive">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsefive" aria-expanded="false"
+                                                    aria-controls="collapsefive">
+                                                How do I repair an item? <i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsefive" class="collapse" aria-labelledby="headingfive"
+                                         data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="card-header" id="headingsix">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsesix" aria-expanded="false"
+                                                    aria-controls="collapsesix">
+                                                How can I deploy Documentation Landing?<i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsesix" class="collapse" aria-labelledby="headingsix"
+                                         data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.6s">
+                                    <div class="card-header" id="headingseven">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapseseven" aria-expanded="false"
+                                                    aria-controls="collapseseven">
+                                                Is there a warranty on my item? <i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseseven" class="collapse" aria-labelledby="headingseven"
+                                         data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane faq_tab_pane fade" id="formOne" role="tabpanel"
+                             aria-labelledby="formOne-tab">
+                            <div class="accordion doc_faq_info" id="accordionExampletwo">
+                                <div class="card wow fadeInUp">
+                                    <div class="card-header" id="headingfOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                    data-target="#collapsefOne" aria-expanded="true"
+                                                    aria-controls="collapsefOne">
+                                                How can I deploy Documentation Landing?<i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsefOne" class="collapse show" aria-labelledby="headingfOne"
+                                         data-parent="#accordionExampletwo">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="card-header" id="headingfTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsefTwo" aria-expanded="false"
+                                                    aria-controls="collapsefTwo">
+                                                Is maternity covered in health insurance policies?<i
+                                                    class="icon_plus"></i><i class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsefTwo" class="collapse" aria-labelledby="headingfTwo"
+                                         data-parent="#accordionExampletwo">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="card-header" id="headingfThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsefThree" aria-expanded="false"
+                                                    aria-controls="collapsefThree">
+                                                What are the documents required for claiming? <i
+                                                    class="icon_plus"></i><i class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsefThree" class="collapse" aria-labelledby="headingfThree"
+                                         data-parent="#accordionExampletwo">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="card-header" id="headingfFour">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsefFour" aria-expanded="false"
+                                                    aria-controls="collapsefFour">
+                                                Any useful books on numerical computing?<i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsefFour" class="collapse" aria-labelledby="headingfFour"
+                                         data-parent="#accordionExampletwo">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="card-header" id="headingffive">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapseffive" aria-expanded="false"
+                                                    aria-controls="collapseffive">
+                                                How do I repair an item? <i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseffive" class="collapse" aria-labelledby="headingffive"
+                                         data-parent="#accordionExampletwo">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="card-header" id="headingfsix">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsefsix" aria-expanded="false"
+                                                    aria-controls="collapsefsix">
+                                                How can I deploy Documentation Landing?<i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsefsix" class="collapse" aria-labelledby="headingfsix"
+                                         data-parent="#accordionExampletwo">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.6s">
+                                    <div class="card-header" id="headingfseven">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsefseven" aria-expanded="false"
+                                                    aria-controls="collapsefseven">
+                                                Is there a warranty on my item? <i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsefseven" class="collapse" aria-labelledby="headingfseven"
+                                         data-parent="#accordionExampletwo">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane faq_tab_pane fade" id="pricingOne" role="tabpanel"
+                             aria-labelledby="pricingOne-tab">
+                            <div class="accordion doc_faq_info" id="accordionExamplethree">
+                                <div class="card wow fadeInUp">
+                                    <div class="card-header" id="headingpTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsepTwo" aria-expanded="false"
+                                                    aria-controls="collapsepTwo">
+                                                Is maternity covered in health insurance policies?<i
+                                                    class="icon_plus"></i><i class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsepTwo" class="collapse" aria-labelledby="headingpTwo"
+                                         data-parent="#accordionExamplethree">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="card-header" id="headingpOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                    data-target="#collapsepOne" aria-expanded="true"
+                                                    aria-controls="collapsepOne">
+                                                How can I deploy Documentation Landing?<i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsepOne" class="collapse show" aria-labelledby="headingpOne"
+                                         data-parent="#accordionExamplethree">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="card-header" id="headingpThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsepThree" aria-expanded="false"
+                                                    aria-controls="collapsepThree">
+                                                What are the documents required for claiming? <i
+                                                    class="icon_plus"></i><i class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsepThree" class="collapse" aria-labelledby="headingpThree"
+                                         data-parent="#accordionExamplethree">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="card-header" id="headingpFour">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsepFour" aria-expanded="false"
+                                                    aria-controls="collapsepFour">
+                                                Any useful books on numerical computing?<i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsepFour" class="collapse" aria-labelledby="headingpFour"
+                                         data-parent="#accordionExamplethree">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="card-header" id="headingpfive">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsepfive" aria-expanded="false"
+                                                    aria-controls="collapsepfive">
+                                                How do I repair an item? <i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsepfive" class="collapse" aria-labelledby="headingpfive"
+                                         data-parent="#accordionExamplethree">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="card-header" id="headingpsix">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsepsix" aria-expanded="false"
+                                                    aria-controls="collapsepsix">
+                                                How can I deploy Documentation Landing?<i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsepsix" class="collapse" aria-labelledby="headingpsix"
+                                         data-parent="#accordionExamplethree">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.6s">
+                                    <div class="card-header" id="headingpseven">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsepseven" aria-expanded="false"
+                                                    aria-controls="collapsepseven">
+                                                Is there a warranty on my item? <i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsepseven" class="collapse" aria-labelledby="headingpseven"
+                                         data-parent="#accordionExamplethree">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane faq_tab_pane fade" id="profileOne" role="tabpanel"
+                             aria-labelledby="profileOne-tab">
+                            <div class="accordion doc_faq_info" id="accordionExamplefour">
+                                <div class="card wow fadeInUp">
+                                    <div class="card-header" id="headingprTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapseprTwo" aria-expanded="false"
+                                                    aria-controls="collapseprTwo">
+                                                Is maternity covered in health insurance policies?<i
+                                                    class="icon_plus"></i><i class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseprTwo" class="collapse" aria-labelledby="headingprTwo"
+                                         data-parent="#accordionExamplefour">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="card-header" id="headingprOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                    data-target="#collapseprOne" aria-expanded="true"
+                                                    aria-controls="collapseprOne">
+                                                How can I deploy Documentation Landing?<i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseprOne" class="collapse show" aria-labelledby="headingprOne"
+                                         data-parent="#accordionExamplefour">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="card-header" id="headingprThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapseprThree" aria-expanded="false"
+                                                    aria-controls="collapseprThree">
+                                                What are the documents required for claiming? <i
+                                                    class="icon_plus"></i><i class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseprThree" class="collapse" aria-labelledby="headingprThree"
+                                         data-parent="#accordionExamplefour">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="card-header" id="headingprFour">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapseprFour" aria-expanded="false"
+                                                    aria-controls="collapseprFour">
+                                                Any useful books on numerical computing?<i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseprFour" class="collapse" aria-labelledby="headingprFour"
+                                         data-parent="#accordionExamplefour">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.4s">
+                                    <div class="card-header" id="headingprfive">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapseprfive" aria-expanded="false"
+                                                    aria-controls="collapseprfive">
+                                                How do I repair an item? <i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseprfive" class="collapse" aria-labelledby="headingprfive"
+                                         data-parent="#accordionExamplefour">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="card-header" id="headingprsix">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapseprsix" aria-expanded="false"
+                                                    aria-controls="collapseprsix">
+                                                How can I deploy Documentation Landing?<i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseprsix" class="collapse" aria-labelledby="headingprsix"
+                                         data-parent="#accordionExamplefour">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.6s">
+                                    <div class="card-header" id="headingprseven">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapseprseven" aria-expanded="false"
+                                                    aria-controls="collapseprseven">
+                                                Is there a warranty on my item? <i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseprseven" class="collapse" aria-labelledby="headingprseven"
+                                         data-parent="#accordionExamplefour">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane faq_tab_pane fade" id="return" role="tabpanel"
+                             aria-labelledby="return-tab">
+                            <div class="accordion doc_faq_info" id="accordionExamplefive">
+                                <div class="card wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="card-header" id="headingreOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                    data-target="#collapsereOne" aria-expanded="true"
+                                                    aria-controls="collapsereOne">
+                                                How can I deploy Documentation Landing?<i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsereOne" class="collapse show" aria-labelledby="headingreOne"
+                                         data-parent="#accordionExamplefive">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp">
+                                    <div class="card-header" id="headingreTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsereTwo" aria-expanded="false"
+                                                    aria-controls="collapsereTwo">
+                                                Is maternity covered in health insurance policies?<i
+                                                    class="icon_plus"></i><i class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsereTwo" class="collapse" aria-labelledby="headingreTwo"
+                                         data-parent="#accordionExamplefive">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="card-header" id="headingreThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsereThree" aria-expanded="false"
+                                                    aria-controls="collapsereThree">
+                                                What are the documents required for claiming? <i
+                                                    class="icon_plus"></i><i class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsereThree" class="collapse" aria-labelledby="headingreThree"
+                                         data-parent="#accordionExamplefive">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane faq_tab_pane fade" id="car" role="tabpanel" aria-labelledby="car-tab">
+                            <div class="accordion doc_faq_info" id="accordionExamplesix">
+                                <div class="card wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="card-header" id="headingcarOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                    data-target="#collapsecarOne" aria-expanded="true"
+                                                    aria-controls="collapsecarOne">
+                                                How can I deploy Documentation Landing?<i class="icon_plus"></i><i
+                                                    class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsecarOne" class="collapse show" aria-labelledby="headingcarOne"
+                                         data-parent="#accordionExamplesix">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp">
+                                    <div class="card-header" id="headingcarTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsecarTwo" aria-expanded="false"
+                                                    aria-controls="collapsecarTwo">
+                                                Is maternity covered in health insurance policies?<i
+                                                    class="icon_plus"></i><i class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsecarTwo" class="collapse" aria-labelledby="headingcarTwo"
+                                         data-parent="#accordionExamplesix">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card wow fadeInUp" data-wow-delay="0.2s">
+                                    <div class="card-header" id="headingcarThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                                    data-target="#collapsecarThree" aria-expanded="false"
+                                                    aria-controls="collapsecarThree">
+                                                What are the documents required for claiming? <i
+                                                    class="icon_plus"></i><i class="icon_minus-06"></i>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapsecarThree" class="collapse" aria-labelledby="headingcarThree"
+                                         data-parent="#accordionExamplesix">
+                                        <div class="card-body">
+                                            Skive off he lost his bottle the little rotter absolutely bladdered in my
+                                            flat William no biggie, gormless me old mucker such a fibber David bum bag
+                                            so I said cack.!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <form action="#" class="contact_form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Subject">
-                    </div>
-                    <div class="form-group">
-                        <textarea name="Message" id="massage" placeholder="Massage"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn action_btn">Send</button>
-                    </div>
-                </form>
             </div>
         </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/pre-loader.js"> </script>
-    <script src="assets/bootstrap/js/popper.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap-select.min.js"></script>
-    <script src="assets/font-size/js/rv-jquery-fontsize-2.0.3.js"></script>
-    <script src="js/parallaxie.js"></script>
-    <script src="js/TweenMax.min.js"></script>
-    <script src="js/jquery.wavify.js"></script>
-    <script src="js/anchor.js"></script>
-    <script src="assets/mailchimp/plugins.js"></script>
-    <script src="assets/wow/wow.min.js"></script>
-    <script src="assets/niceselectpicker/jquery.nice-select.min.js"></script>
-    <script src="assets/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-        var key="AIzaSyAIJVxIXLLa1Chbl970V_SZZAB6uMLBEwc";
-        var sheetID = "1kBfRiVz8NyG--_XckFgxsTs2afwkgyVDrt3Nb95wJ2E";
-        // var sheetID = "17BPLBBiGbhjGGTxpf0O36Zlxda0ty6W_UL0gmEiPMHo";
-    
-        var url = "https://sheets.googleapis.com/v4/spreadsheets/"+sheetID+"/?key="+key+"&includeGridData=true";  
-         $.ajax({
-            url: url, 
-            method: "GET",
-            crossDomain: true,
-            dataType: "json",
-            success: function(response){
-                var html="";var html_menu="";
-                response.sheets.map(function (item){
-                    console.log(item);
-                    html += '<div class="col-lg-6 col-sm-6"><div class="media documentation_item"><div class="icon"><img src="img/home_one/icon/folder.png" alt=""></div><div class="media-body"><a href="shortnote.html?note='+item.properties.title+'"><h5>'+item.properties.title+'</h5></a><p>He lost his bottle bubble and squeak knackered.!</p></div></div></div>';
-                    html_menu += '<li class="nav-item">';
-                    item.data.map(function (item1){
-                        html_menu += '<a href="shortnote.html?note='+item.properties.title+'" class="nav-link"><img src="img/side-nav/briefcase.png" alt="briefcase">'+item.properties.title+'</a><span class="icon"><i class="arrow_carrot-down"></i></span> <ul class="list-unstyled dropdown_nav">';
-                        item1.rowData.map(function (item2){
-                            // console.log(item2.values[0].formattedValue, item2.values[1].formattedValue, item2.values[2].formattedValue)
-                            html_menu +='<li><a href="note_details.html">Tabs</a></li>';
-                        })
-                        html_menu += '</ul>';
-                    })
-                    html_menu += '</li>';
-                });
+    </section> -->
+    <section class="doc_action_area_two">
+        <div class="container">
+            <div class="doc_action_info mt_130">
+                <div class="row align-items-center">
+                    <div class="col-lg-9">
+                        <div class="media wow fadeInLeft">
+                            <img src="img/home_two/Internet.png" alt="">
+                            <div class="media-body">
+                                <h2 class="h_title">You will love our solutions</h2>
+                                <p>Let's go...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 wow fadeInRight">
+                        <a href="#" class="action_btn">View All Docs <i class="arrow_right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div data-include="home-footer"></div>
 
-                console.log(html_menu);
-                $("#side_menu_1").append(html_menu);
-                $("#side_menu_2").append(html_menu);
-                $("#sheets-container").append(html);
-            },
-            error: function(err){
-                console.log(err)
-            }
-        });
-    </script>
+</div>
+
+<!-- Back to top button -->
+<a id="back-to-top" title="Back to Top"></a>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/pre-loader.js"></script>
+<script src="assets/bootstrap/js/popper.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/parallaxie.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/jquery.wavify.js"></script>
+<script src="assets/wow/wow.min.js"></script>
+<script src="assets/counterup/jquery.counterup.min.js"></script>
+<script src="assets/counterup/jquery.waypoints.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    var key="AIzaSyAIJVxIXLLa1Chbl970V_SZZAB6uMLBEwc";
+    var sheetID = "1kBfRiVz8NyG--_XckFgxsTs2afwkgyVDrt3Nb95wJ2E";
+    // var sheetID = "17BPLBBiGbhjGGTxpf0O36Zlxda0ty6W_UL0gmEiPMHo";
+
+    var url = "https://sheets.googleapis.com/v4/spreadsheets/"+sheetID+"/?key="+key+"&includeGridData=true";  
+     $.ajax({
+        url: url, 
+        method: "GET",
+        crossDomain: true,
+        dataType: "json",
+        success: function(response){
+            console.log(response);
+            var html=""; var html2="";
+            response.sheets.map(function (item){
+                console.log(item);
+                html += '<div class="col-lg-4 col-sm-6"><div class="media theme_doc_item wow fadeInUp"><img src="img/home_two/cloud1.png" alt=""><div class="media-body"><a href="shortnote.html?note='+item.properties.title+'"><h4 class="c_head">'+item.properties.title+'</h4></a><p>Oxford bonnet are you taking the piss cheeky mufty.</p></div></div></div>';
+
+                    item.data.map(function (item1){
+
+                        html2 += '<div class="col-lg-4 col-sm-6"><div class="categories_guide_item wow fadeInUp"><img src="img/home_two/info.png" alt=""><div class="doc_tag_title"><h4>'+item.properties.title+'</h4></div><ul class="list-unstyled tag_list">';
+
+                        item1.rowData.slice(1).map(function (item2, index){
+                            if(typeof item2.length !== 0 &&  typeof item2.values !== 'undefined'){
+                                if(typeof item2.values[0].formattedValue !== 'undefined' && item2.values[0].formattedValue !== ''){            
+                                    html2 += '<li><a href="note_details.html?note='+item.properties.title+'&title='+index+'"><i class="icon_document_alt"></i>'+item2?.values[0]?.formattedValue+'</a></li>';
+
+                                }
+                            }
+                        })
+
+                        html2 += '</ul><a href="shortnote.html" class="doc_border_btn">More<i class="arrow_right"></i></a></div></div>';
+
+                    })
+
+            })
+            $("#sheets-container").append(html);
+            $("#note_detail_container").append(html2);
+        },
+        error: function(err){
+            console.log(err)
+        }
+    });
+</script>
+
+<script>
+    $(function () {
+        var includes = $('[data-include]')
+        $.each(includes, function () {
+            var file = 'views/' + $(this).data('include') + '.html'
+            $(this).load(file)
+        })
+    })
+</script>
 </body>
 
 </html>
